@@ -1,0 +1,7 @@
+Name:Flying Men has a fucking gun holy shit
+ManaCost:1 U U
+Types:Creature Human 
+PT:1/1
+A:AB$ DealDamage | Cost$ T | ValidTgts$ Any | NumDmg$ 1 | SpellDescription$ CARDNAME deals 1 damage to any target.
+SVar:NonCombatPriority:1
+Oracle:{T}: Flying Men has a fucking gun holy shit deals 1 damage to any target.

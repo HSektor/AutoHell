@@ -1,0 +1,12 @@
+Name:Sidney
+ManaCost:no cost
+Types:Land
+R:Event$ Moved | ValidCard$ Card.Self | Destination$ Battlefield | ReplacementResult$ Updated | ReplaceWith$ ETBTapped | Description$ CARDNAME enters tapped.
+SVar:ETBTapped:DB$ Tap | Defined$ Self | ETB$ True
+A:AB$ Mana | Cost$ T | Produced$ Combo G R | SpellDescription$ Add {R} or {G}.
+A:AB$ PutCounter | Cost$ 3 R R T | IsCurse$ True | ValidTgts$ Land.counters_EQ0_BLAZE | TgtPrompt$ Select target land without a blaze counter | CounterType$ BLAZE | CounterNum$ 1 | SubAbility$ DBEffect | SpellDescription$ Put a blaze counter on target land without a blaze counter on it. For as long as that land has a blaze counter on it, it has "At the beginning of your upkeep, this land deals 1 damage to you." (The land continues to burn after CARDNAME has left the battlefield.)
+SVar:DBEffect:DB$ Effect | RememberObjects$ Targeted | StaticAbilities$ ObsidianStatic | ForgetOnMoved$ Battlefield | ForgetCounter$ BLAZE | Duration$ Permanent
+SVar:ObsidianStatic:Mode$ Continuous | Affected$ Card.IsRemembered | AddTrigger$ ObsidianBlazeTrig | Description$ For as long as that land has a blaze counter on it, it has "At the beginning of your upkeep, this land deals 1 damage to you."
+SVar:ObsidianBlazeTrig:Mode$ Phase | Phase$ Upkeep | ValidPlayer$ You | TriggerZones$ Battlefield | Execute$ ObsidianBlazeDmg | TriggerDescription$ At the beginning of your upkeep, CARDNAME deals 1 damage to you.
+SVar:ObsidianBlazeDmg:DB$ DealDamage | Defined$ You | NumDmg$ 1
+Oracle:Sidney enters tapped.\n{T}: Add {R}, or {G}.\n{3}{R}{R},{T}: Put a blaze counter on target land without a blaze counter on it. For as long as that land has a blaze counter on it, it has "At the beginning of your upkeep, this land deals 1 damage to you." (The land continues to burn after Obsidian Fireheart has left the battlefield.)

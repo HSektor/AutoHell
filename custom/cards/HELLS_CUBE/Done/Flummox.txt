@@ -1,0 +1,12 @@
+Name:Flummox
+ManaCost:U
+Types:Instant
+
+A:SP$ Counter | TargetType$ Spell | ValidTgts$ Card | SubAbility$ DBMox | SpellDescription$ Counter target spell. Its controller creates a token copy of an Alpha Mox of their choice.
+
+SVar:DBMox:DB$ NameCard | Defined$ TargetedController | ChooseFromList$ Mox Pearl,Mox Sapphire,Mox Jet,Mox Ruby,Mox Emerald | SubAbility$ DBCreateMox
+
+SVar:DBCreateMox:DB$ CopyPermanent | DefinedName$ NamedCard | Controller$ TargetedController
+
+DeckHas:Type$Artifact
+Oracle:Counter target spell. Its controller creates a token copy of an Alpha Mox of their choice.

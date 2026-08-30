@@ -1,0 +1,5 @@
+Name:Nut Shot
+ManaCost:RP RP
+Types:Instant
+A:SP$ DealDamage | ValidTgts$ Any | NumDmg$ 2 | AIPhyrexianPayment$ OnFatalDamage.2 | SpellDescription$ CARDNAME deals 2 damage to any target.
+Oracle:({R/P} can be paid with either {R} or 2 life.)\nGut Shot deals 2 damage to any target.

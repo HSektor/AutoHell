@@ -1,0 +1,7 @@
+Name:Uncle Is Van
+ManaCost:1 B B
+Types:Artifact Vehicle Istvan
+PT:3/3
+R:Event$ DamageDone | Prevent$ True | ValidSource$ Creature.inZoneBattlefield | ValidTarget$ Creature.Self | 
+K:Crew:2
+Oracle:Prevent all damage that would be dealt to Uncle Is Van.\nCrew 2

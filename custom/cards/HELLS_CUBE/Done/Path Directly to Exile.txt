@@ -1,0 +1,6 @@
+Name:Path Directly To Exile
+ManaCost:W
+Types:Instant
+A:SP$ ChangeZone | ValidTgts$ Creature | TargetType$ Spell | TgtZone$ Stack | Origin$ Stack | Destination$ Exile | SubAbility$ DBChange | StackDescription$ Exile {c:Targeted}. {p:TargetedController} may search their library for a basic land card, put that card onto the battlefield tapped, then shuffle their library. | TgtPrompt$ Choose target spell to exile | SpellDescription$ Exile target creature spell. Its controller may search their library for a basic land card, put that card onto the battlefield tapped, then shuffle.
+SVar:DBChange:DB$ ChangeZone | Optional$ True | Origin$ Library | Destination$ Battlefield | Tapped$ True | ChangeType$ Land.Basic | ChangeTypeDesc$ basic land | DefinedPlayer$ TargetedController | ShuffleNonMandatory$ True | StackDescription$ None
+Oracle:Exile target creature spell. Its controller may search their library for a basic land card, put that card onto the battlefield tapped, then shuffle.

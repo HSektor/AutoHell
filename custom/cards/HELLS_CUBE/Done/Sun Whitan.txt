@@ -1,0 +1,13 @@
+Name:Sun Whitan
+ManaCost:4 W W
+Types:Creature Giant
+PT:6/6
+K:Vigilance
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigCharm | OptionalDecider$ You | TriggerDescription$ Whenever CARDNAME enters or attacks, ABILITY
+T:Mode$ Attacks | ValidCard$ Card.Self | Execute$ TrigCharm | TriggerZones$ Battlefield | OptionalDecider$ You | Secondary$ True | TriggerDescription$ Whenever CARDNAME enters or attacks, ABILITY
+SVar:TrigCharm:DB$ Charm | Choices$ DBGainLife,DBPreventDmg
+SVar:DBGainLife:DB$ GainLife | ValidTgts$ Player | LifeAmount$ 3 | SpellDescription$ Target player gains 3 life.
+SVar:DBPreventDmg:DB$ PreventDamage | ValidTgts$ Any | Amount$ 3 | SpellDescription$ Prevent the next 3 damage that would be dealt to any target this turn.
+DeckHas:Ability$LifeGain
+SVar:HasAttackEffect:TRUE
+Oracle:Vigilance\nWhenever Sun Whitan enters or attacks, you may return target permanent card with mana value 3 or less from your graveyard to the battlefield.

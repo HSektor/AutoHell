@@ -1,0 +1,8 @@
+Name:Sherbet Medallion
+ManaCost:3
+Types:Artifact
+A:AB$ Mana | Cost$ T | Produced$ R | SpellDescription$ Add {R}.
+A:AB$ Mana | Cost$ T | Produced$ G | SpellDescription$ Add {G}.
+A:AB$ Mana | Cost$ T | Produced$ W | SpellDescription$ Add {W}.
+A:AB$ GainLife | Cost$ 2 T Sac<1/CARDNAME/this token> | LifeAmount$ 3 | SpellDescription$ You gain 3 life.
+Oracle:\n{T}: Add {R}.\n{T}: Add {G}.\n{T}: Add {W}.\n{2}, {T}, Sacrifice Sherbet Medallion: You gain 3 life.

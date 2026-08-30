@@ -1,0 +1,40 @@
+Name:Baneslayer Angel's Paranoid Mother
+ManaCost: 4 W W
+Types:Legendary Creature Angel
+PT:5/5
+K:Flying
+K:First Strike
+K:Lifelink
+K:Protection:Demon
+K:Protection:Dragon
+K:Protection:Devil
+K:Protection:Vampire
+K:Protection:Phoenix
+K:Protection:Dinosaur
+K:Protection:Zombie
+K:Protection:Goblin
+K:Protection:Snake
+K:Protection:Drake
+K:Protection:Kraken
+K:Protection:Shapeshifter
+K:Protection:Nightmare
+K:Protection:Gamer
+K:Protection:Wraith
+K:Protection:Elk
+K:Protection:Wolf
+K:Protection:Werewolf
+K:Protection:Imp
+K:Protection:Brushwagg
+K:Protection:Kobold
+K:Protection:Mutant
+K:Protection:Ninja
+K:Protection:Turtle
+K:Protection:Spider
+K:Protection:Dwarf
+K:Protection:Dungeon
+K:Protection:Cat
+K:Protection:Bear
+K:Protection:Leviathan
+K:Protection:Egg
+K:Protection:Dog
+Oracle:Flying, first strike, lifelink, protection from Demons, Dragons, Devils, Cultists, Aberrations, Vampires, Phoenixes, Dinosaurs, Zombies, Goblins, Dragons, Snakes, Drakes, Krakens, Shapeshifters, Nightmares, Gamers, Wraiths, Elks, Wolves, Werewolves, Imps, Brushwaggs, Kobolds, Demons, Mutants, Ninjas, Turtles, Spiders, Drawfs, Dungeons, Dragons, Mimics, Lions, Tigers, Bears, Leviathans, Eggs, Dogs, and Demons.

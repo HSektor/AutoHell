@@ -1,0 +1,8 @@
+Name:The Next Conceivable Step Up From Battlefield Raptor
+ManaCost:W
+Types:Creature Bird
+PT:1/2
+K:Flying
+K:First strike
+K:Lifelink
+Oracle:Flying, First Strike, Lifelink

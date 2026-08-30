@@ -1,0 +1,8 @@
+Name:Pondork
+ManaCost:U
+Types:Creature Elf
+PT:1/1
+A:AB$ RearrangeTopOfLibrary | Cost$ T | Defined$ You | NumCards$ 3 | SpellDescription$ Look at the top three cards of your library, then put them back in any order.
+A:AB$ Shuffle | Cost$ Sac<1/CARDNAME> | Defined$ You | Optional$ True | SubAbility$ DBDraw | SpellDescription$ Shuffle your library.
+SVar:DBDraw:DB$ Draw | Defined$ You | NumCards$ 1
+Oracle: {T}: Look at the top three cards of your library, then put them back in any order.\nSacrifice Pondork: You may shuffle your library. Draw a card.

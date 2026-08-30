@@ -1,0 +1,15 @@
+Name:Heart of the Cards
+ManaCost:R
+Types:Instant
+
+A:SP$ NameCard | Defined$ You | ValidCards$ Card | SubAbility$ DBReveal | SpellDescription$ Name a card, then reveal the top card of your library.
+
+SVar:DBReveal:DB$ PeekAndReveal | RememberRevealed$ True | SubAbility$ DBMove
+
+SVar:DBMove:DB$ ChangeZone | Defined$ Remembered | Destination$ Hand | ConditionDefined$ Remembered | ConditionPresent$ Card.NamedCard | ConditionCompare$ GE1 | SubAbility$ DBDraw | SpellDescription$ If it's the named card, put it into your hand.
+
+SVar:DBDraw:DB$ Draw | NumCards$ 1 | SubAbility$ DBCleanup | SpellDescription$ Draw a card.
+
+SVar:DBCleanup:DB$ Cleanup | ClearRemembered$ True
+
+Oracle:Name a card, then reveal the top card of your library. If it's the named card, put it into your hand. Draw a card.

@@ -1,0 +1,9 @@
+Name:Novice Necromancer
+ManaCost:1 B
+Types:Creature Human Wizard
+PT:1/1
+
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigToken | TriggerDescription$ When CARDNAME enters the battlefield, create a 1/1 black Skeleton Warrior creature token with "B: Regenerate this creature."
+SVar:TrigToken:DB$ Token | TokenScript$ b_1_1_skeleton_regenerate | TokenOwner$ You
+
+Oracle:When Novice Necromancer enters the battlefield, create a 1/1 black Skeleton Warrior creature token with "B: Regenerate this creature."

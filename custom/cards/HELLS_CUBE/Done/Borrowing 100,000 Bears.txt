@@ -1,0 +1,7 @@
+Name:Borrowing 100,000 bears
+ManaCost:2 G
+Types:Sorcery
+A:SP$ Token | TokenOwner$ You  | ValidTgts$ Opponent | TokenAmount$ X | TokenScript$ g_2_2_bear | SpellDescription$ Create a 2/2 green Bear creature token for each tapped creature target opponent controls.
+SVar:X:Count$Valid Creature.tapped+TargetedPlayerCtrl
+DeckHas:Ability$Token & Type$Bear
+Create a 2/2 green Bear creature token for each tapped creature target opponent controls.

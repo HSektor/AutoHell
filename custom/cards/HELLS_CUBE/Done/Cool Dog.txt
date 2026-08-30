@@ -1,0 +1,7 @@
+Name:Cool Dog
+ManaCost:1 R R
+Types:Creature Hound
+PT:3/3
+K:Haste
+
+Oracle:Haste

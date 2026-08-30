@@ -1,0 +1,12 @@
+Name:God's Command
+ManaCost:3 W W
+Types:Sorcery
+
+A:SP$ Charm | Choices$ ModeA,ModeB,ModeC,ModeD | CharmNum$ 2
+
+SVar:ModeA:DB$ DestroyAll | ValidCards$ Creature | NoRegen$ True | SpellDescription$ Destroy all creatures. They can't be regenerated.
+SVar:ModeB:DB$ GainLife | Defined$ You | LifeAmount$ 5 | SpellDescription$ You gain 5 life.
+SVar:ModeC:DB$ Draw | NumCards$ 1 | SpellDescription$ Draw a card.
+SVar:ModeD:DB$ ChangeZone | Origin$ Battlefield | Destination$ Exile | ValidTgts$ Permanent.nonLand | SpellDescription$ Exile target nonland permanent.
+
+Oracle:Choose two —\n• Destroy all creatures. They can't be regenerated.\n• You gain 5 life.\n• Draw a card.\n• Exile target nonland permanent.

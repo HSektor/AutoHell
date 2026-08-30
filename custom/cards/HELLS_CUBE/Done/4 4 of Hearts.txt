@@ -1,0 +1,6 @@
+Name:4 4 of Hearts
+ManaCost:3 R
+Types:Creature Playing Card
+PT:4/4
+K:Lifelink
+Oracle:Lifelink

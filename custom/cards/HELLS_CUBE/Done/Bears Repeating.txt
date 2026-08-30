@@ -1,0 +1,9 @@
+Name:Bears Repeating
+ManaCost:1 G
+Types:Creature Bear Army
+PT:2/2
+K:Echo:1 G
+T:Mode$ SpellCast | ValidCard$ Creature.cmcEQ2| ValidActivatingPlayer$ You | Execute$ TrigToken | TriggerZones$ Battlefield | TriggerDescription$ Whenever you cast a spell with converted mana cost 2, create a 2/2 green Bear creature token.
+SVar:TrigToken:DB$ Token | TokenOwner$ You | TokenScript$ g_2_2_bear
+DeckHas:Ability$Token
+Oracle:Echo {1}{G}\nWhenever you cast a spell with converted mana cost 2, create a 2/2 green Bear creature token.

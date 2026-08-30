@@ -1,0 +1,10 @@
+Name:Dockside Extortionist but it Actually Has Extort
+ManaCost:1 W
+Types:Creature Goblin Pirate
+PT:1/2
+K:Extort
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ DBDonationBowlTokens | TriggerDescription$ When CARDNAME enters, create X Treasure tokens, where X is the number of artifacts and enchantments your opponents control.
+SVar:DBDonationBowlTokens:DB$ Token | TokenAmount$ X | TokenScript$ c_a_donation_bowl | TokenOwner$ You
+SVar:X:Count$Valid Artifact.OppCtrl,Enchantment.OppCtrl
+SVar:PlayMain1:TRUE
+Oracle:Extort (Whenever you cast a spell, you may pay . If you do, each opponent loses 1 life and you gain that much life.)\nWhen Dockside Extortionist enters the battlefield, create X Donation Bowl tokens, where X is the number of artifacts and enchantments your opponents control. (Donation Bowl tokens are artifacts with extort.)

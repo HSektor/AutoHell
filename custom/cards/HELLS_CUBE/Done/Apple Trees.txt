@@ -1,0 +1,8 @@
+Name:Apple Trees
+ManaCost:no cost
+Types:Land Food
+R:Event$ Moved | ValidCard$ Card.Self | Destination$ Battlefield | ReplacementResult$ Updated | ReplaceWith$ ETBTapped | Description$ CARDNAME enters tapped.
+SVar:ETBTapped:DB$ Tap | Defined$ Self | ETB$ True
+A:AB$ Mana | Cost$ T | Produced$ Combo G W | SpellDescription$ Add {G}, or {W}.
+A:AB$ GainLife | Cost$ 2 T Sac<1/CARDNAME/this token> | LifeAmount$ 3 | SpellDescription$ You gain 3 life.
+Oracle:Jungle Shrine enters tapped.\n{T}: Add {G}, or {W}.\n{2}, {T}, Sacrifice Apple Trees: You gain 3 life.

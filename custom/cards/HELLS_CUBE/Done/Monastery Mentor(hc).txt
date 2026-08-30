@@ -1,0 +1,8 @@
+Name:Monastery Mentor (HC)
+ManaCost:no cost
+Types:Land
+R:Event$ Moved | ValidCard$ Card.Self | Destination$ Battlefield | ReplacementResult$ Updated | ReplaceWith$ ETBTapped | Description$ CARDNAME enters tapped.
+SVar:ETBTapped:DB$ Tap | Defined$ Self | ETB$ True
+A:AB$ Mana | Cost$ T | Produced$ W | SpellDescription$ Add {W}.
+A:AB$ Animate | Cost$ 2 W | Defined$ Self | Power$ 2 | Toughness$ 2 | Keywords$ Mentor | Types$ Creature | RemoveCreatureTypes$ True | Colors$ White | OverwriteColors$ True | Duration$ Permanent | SpellDescription$ Monastery Mentor becomes a 2/2 white creature with mentor. 
+Oracle:Monastery Mentor enters the battlefield tapped.\n{T}: Add {W}.\n{2}{W}: Monastery Mentor becomes a 2/2 white creature with mentor. It’s still a land.

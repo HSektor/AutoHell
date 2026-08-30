@@ -1,0 +1,7 @@
+Name:Watch Wolf
+ManaCost:no cost
+Types:Creature Wolf
+Colors:white,green
+PT:3/3
+K:Suspend:1:G W
+Oracle:Suspend 1—{G}{W} (Rather than cast this card from your hand, pay {G}{W} and exile it with one time counter on it. At the beginning of your upkeep, remove a time counter. When the last is removed, you may cast it without paying its mana cost.)

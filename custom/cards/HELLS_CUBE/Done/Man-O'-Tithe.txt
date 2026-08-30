@@ -1,0 +1,10 @@
+Name:Man-O'-Tithe
+ManaCost:1 W U
+Types:Creature Jellyfish
+PT:2/2
+K:Flash
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigCounter | TriggerDescription$ When Man-O'-Tithe enters the battlefield, counter target spell unless its controller pays {1}
+SVar:TrigCounter:DB$ Counter | TargetType$ Spell | ValidTgts$ Card | UnlessCost$ 1 | TgtPrompt$ Select target spell an opponent controls.
+T:Mode$ Phase | Phase$ Upkeep | ValidPlayer$ You | TriggerZones$ Battlefield | OptionalDecider$ You | Execute$ TrigBounce | TriggerDescription$ At the beginning of your upkeep, you may return Man-O'-Tithe to its owner's hand.
+SVar:TrigBounce:DB$ ChangeZone | Origin$ Battlefield | Destination$ Hand
+Oracle: Flash\nWhen Man-O'-Tithe enters the battlefield, counter target spell unless its controller pays {1}.\nAt the beginning of your upkeep, you may return Man-O'-Tithe to its owner's hand.

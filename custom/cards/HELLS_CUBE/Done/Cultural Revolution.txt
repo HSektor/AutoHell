@@ -1,0 +1,6 @@
+Name:Anarchy
+ManaCost:2 RW
+Types:Sorcery
+A:SP$ DestroyAll | ValidCards$ Permanent.Historic | SpellDescription$ Destroy all historic permanents.
+AI:RemoveDeck:Random
+Oracle:Destroy all historic permanents. (Artifacts, legendaries, and Sagas are historic.)

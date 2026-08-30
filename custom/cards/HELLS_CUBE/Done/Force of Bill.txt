@@ -1,0 +1,7 @@
+Name:Force of Bill
+ManaCost:3 W W
+Types:Legendary Creature Elder God
+PT:2/3
+K:Flash
+S:Mode$ AlternativeCost | ValidSA$ Spell.Self | EffectZone$ All | Cost$ PayLife<1> ExileFromHand<1/Card.White+Other> | Description$ You may pay 1 life and exile a blue card from your hand rather than pay this spell's mana cost.
+Oracle:You may cast Force of Bill without paying its mana cost by exiling a white card from your hand and paying 1 life.

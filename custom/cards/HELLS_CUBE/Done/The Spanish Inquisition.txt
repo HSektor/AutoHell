@@ -1,0 +1,13 @@
+Name:The Spanish Inquisition
+ManaCost:1 B
+Types:Creature Human Crusader
+PT:2/1
+K:First Strike
+
+K:Megamorph:1 B
+
+T:Mode$ TurnFaceUp | ValidCard$ Card.Self | Execute$ DBInquisition | TriggerZones$ Battlefield | TriggerDescription$ When CARDNAME is turned face up, target opponent reveals their hand. You choose a nonland card with mana value 3 or less. That player discards that card.
+
+SVar:DBInquisition:DB$ Discard | ValidTgts$ Opponent | Mode$ RevealYouChoose | DiscardValid$ Card.nonLand+cmcLE3 | DiscardValidDesc$ nonland card from it with mana value 3 or less | SpellDescription$ Target player reveals their hand. You choose a nonland card from it with mana value 3 or less. That player discards that card.
+
+Oracle:Megamorph {1}{B}\nWhen CARDNAME is turned face up, target opponent reveals their hand. You choose a nonland card with mana value 3 or less. That player discards that card.\nFirst strike.

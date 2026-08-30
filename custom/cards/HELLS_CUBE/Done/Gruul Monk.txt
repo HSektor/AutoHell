@@ -1,0 +1,8 @@
+Name:Gruul Monk
+ManaCost:R G
+Types:Creature Human Shaman
+PT:2/2
+T:Mode$ SpellCast | ValidCard$ Card.Creature | ValidActivatingPlayer$ You | Execute$ TrigPump | TriggerZones$ Battlefield | TriggerDescription$ Whenever you cast a creature spell, CARDNAME gets +1/+1 until end of turn.
+SVar:TrigPump:DB$ Pump | Defined$ Self | NumAtt$ +1 | NumDef$ +1 | SpellDescription$ CARDNAME gets +1/+1 until end of turn.
+SVar:BuffedBy:Card.nonLand+Creature
+Oracle:Gruul Prowess (Whenever you cast a creature spell, this creature gets +1/+1 until end of turn.)

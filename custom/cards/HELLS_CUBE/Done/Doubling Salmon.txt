@@ -1,0 +1,9 @@
+Name:Doubling Salmon
+ManaCost:5 G U
+Types:Creature Fish
+PT:1/1
+K:Trample
+T:Mode$ SpellCast | ValidCard$ Card | ValidActivatingPlayer$ You | Execute$ TrigCopy | TriggerZones$ Battlefield | TriggerDescription$ Whenever you cast a spell, create a token that's a copy of CARDNAME.
+SVar:TrigCopy:DB$ CopyPermanent | Defined$ Self
+DeckHas:Ability$Token
+Oracle:Whenever you cast a spell, create a token that's a copy of Doubling Salmon.

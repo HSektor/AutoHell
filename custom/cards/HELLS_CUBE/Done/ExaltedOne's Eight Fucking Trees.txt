@@ -1,0 +1,8 @@
+Name:ExaltedOne's Eight Fucking Trees
+ManaCost:no cost
+Types:Land
+K:Cycling:3
+R:Event$ Moved | ValidCard$ Card.Self | Destination$ Battlefield | ReplacementResult$ Updated | ReplaceWith$ ETBTapped | Description$ CARDNAME enters tapped.
+SVar:ETBTapped:DB$ Tap | Defined$ Self | ETB$ True
+A:AB$ Mana | Cost$ T | Produced$ Combo B U G | SpellDescription$ Add {B}, {U}, or {G}.
+Oracle:ExaltedOne's Eight Fucking Trees enters tapped.\n{T}: Add {B}, {U}, or {G}.\nCycling {3} ({3}, Discard this card: Draw a card.)

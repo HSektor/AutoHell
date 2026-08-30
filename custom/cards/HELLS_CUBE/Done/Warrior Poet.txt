@@ -1,0 +1,9 @@
+Name:Warrior Poet
+ManaCost:5 W W
+Types:Creature Human Samurai
+PT:5/7
+K:First Strike
+K:Vigilance
+K:Protection:Spell.nonColorless:colored spells
+K:Bushido:7
+Oracle:First strike, vigilance\nProtection from colored spells\nBushido 7

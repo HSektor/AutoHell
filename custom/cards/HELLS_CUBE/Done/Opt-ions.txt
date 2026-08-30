@@ -1,0 +1,9 @@
+Name:Opt-ions
+ManaCost:U
+Types:Sorcery
+A:SP$ Scry | ScryNum$ 1 | SubAbility$ ChoosePath | SpellDescription$ Scry 1, then you may draw a card. If you don't, return CARDNAME to your hand.
+SVar:ChoosePath:DB$ GenericChoice | Choices$ DrawCard,ReturnHand | Defined$ You
+SVar:DrawCard:DB$ Draw | NumCards$ 1 | SpellDescription$ Draw a card.
+SVar:ReturnHand:DB$ ChangeZone | Origin$ Stack | Destination$ Hand | Defined$ Parent | SpellDescription$ Return CARDNAME to your hand.
+Oracle:Scry 1, then you may draw a card. If you don't, return Opt-ions to your hand.
+

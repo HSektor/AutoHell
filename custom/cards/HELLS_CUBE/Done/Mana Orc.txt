@@ -1,0 +1,10 @@
+Name:Mana Orc
+ManaCost:R
+Types:Creature Orc
+PT:1/1
+
+A:AB$ Mana | Cost$ T | Produced$ R | SubAbility$ DBPain | SpellDescription$ Add R, then CARDNAME deals 1 damage to you or to target creature you control.
+
+SVar:DBPain:DB$ DealDamage | ValidTgts$ You,Creature.YouCtrl | NumDmg$ 1
+
+Oracle:{T}: Add {R}, then Mana Orc deals 1 damage to you or to target creature you control. (This is not a mana ability.)

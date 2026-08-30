@@ -1,0 +1,6 @@
+Name:Bake into Brownie
+ManaCost:2 B B
+Types:Instant
+A:SP$ Destroy | ValidTgts$ Creature | TgtPrompt$ Select target creature | SubAbility$ DBToken
+SVar:DBToken:DB$ Token | TokenScript$ c_a_weed_sac | TokenAmount$ 1
+Oracle:Destroy target creature. Create a Weed token.

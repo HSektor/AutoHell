@@ -1,0 +1,9 @@
+Name:Man-o'-War Elves
+ManaCost:3 U
+Types:Creature Jellyfish
+PT:3/3
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigChangeZone | TriggerDescription$ When CARDNAME enters, return target creature to its owner's hand.
+SVar:TrigChangeZone:DB$ ChangeZone | ValidTgts$ Creature | Origin$ Battlefield | Destination$ Hand
+SVar:PlayMain1:TRUE
+A:AB$ Mana | Cost$ T | Produced$ G | SpellDescription$ Add {G}.
+Oracle:When Man-o'-War Elves enters, return target creature to its owner's hand.\n{T}: Add {G}.

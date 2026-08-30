@@ -1,0 +1,9 @@
+Name: Glenn, Elendra Archmage
+ManaCost:2 U
+Types:Legendary Creature Faerie Advisor
+PT:2/2
+K:Skulk
+K:Persist
+A:AB$ Draw | Cost$ U Sac<1/CARDNAME> | Defined$ You | NumCards$ X | SpellDescription$ Draw cards equal to his power.
+SVar:X:Count$CardPower
+Oracle:Skulk\n{U}, Sacrifice Glenn, Elendra Archmage: Draw cards equal to his power.\nPersist 

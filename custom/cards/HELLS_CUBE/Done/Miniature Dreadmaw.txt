@@ -1,0 +1,7 @@
+Name:Miniature Dreadmaw
+ManaCost:G
+Types:Creature Dinossaur
+PT:1/1
+K:Trample
+A:AB$ Pump | Cost$ 3 G G | Defined$ Self | NumAtt$ +5 | NumDef$ +5 | SpellDescription$ CARDNAME gets +5/+5 until end of turn.
+Oracle:Trample\n{3}{G}{G}: Miniature Dreadmaw gets +5/+5 until end of turn.

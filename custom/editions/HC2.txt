@@ -1,0 +1,16 @@
+[metadata]
+Code=HC2
+Name=Hell's Cube 2
+Date=2026-08-28
+Type=Custom
+
+[cards]
+1 C The Next Conceivable Step Up From Battlefield Raptor
+2 C Squid
+3 R Card Draw Cruise
+4 C Lightning Bolt’s Downside
+
+[tokens]
+1 c_a_treasure_sac
+
+[CreatureTypes]

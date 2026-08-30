@@ -1,0 +1,8 @@
+Name:Angrath's Ramp
+ManaCost:B R
+Types:Sorcery
+A:SP$ Charm | Choices$ Sacland,SacCreatureMA,SacArtifactMA
+SVar:Sacland:DB$ Sacrifice | ValidTgts$ Player | SacValid$ Land | Amount$ 1 | SpellDescription$ Target player sacrifices an land.
+SVar:SacCreatureMA:DB$ Sacrifice | ValidTgts$ Player | SacValid$ Creature.hasManaAbility | Amount$ 1 | SpellDescription$ Target player sacrifices a creature with a mana ability.
+SVar:SacArtifactMA:DB$ Sacrifice | ValidTgts$ Player | SacValid$ Artifact.hasManaAbility | Amount$ 1 | SpellDescription$ Target player sacrifices an artifact with a mana ability.
+Oracle:Choose one —\n• Target player sacrifices a land.\n• Target player sacrifices a creature with a mana ability.\n• Target player sacrifices an artifact with a mana ability.

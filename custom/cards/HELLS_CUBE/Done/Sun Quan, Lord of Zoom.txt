@@ -1,0 +1,11 @@
+Name:Sun Quan, Lord of Zoom
+ManaCost:3 R R
+Types:Creature
+PT:3/3
+K:Haste
+
+S:Mode$ CantBlockBy | ValidAttacker$ Creature.withHaste+YouCtrl | ValidBlocker$ Creature.!withHaste | Description$ Creatures you control with haste have hastemanship. (They can't be blocked except by creatures with haste.)
+
+S:Mode$ Continuous | Affected$ Creature.withHaste+Other+YouCtrl | AddPower$ 1 | AddToughness$ 1 | Description$ Other creatures you control with haste get +1/+1.
+
+Oracle:Haste\nCreatures you control with haste have hastemanship. (They can't be blocked except by creatures with haste.)\nOther creatures you control with haste get +1/+1.

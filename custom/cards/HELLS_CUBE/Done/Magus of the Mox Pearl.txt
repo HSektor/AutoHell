@@ -1,0 +1,6 @@
+Name:Magus of the Mox Pearl
+ManaCost:W
+Types:Creature Human Wizard
+PT:1/1
+A:AB$ Mana | Cost$ T | Produced$ W | SpellDescription$ Add {W}.
+Oracle:{T}: Add {W}.

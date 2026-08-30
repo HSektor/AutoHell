@@ -1,0 +1,9 @@
+Name:Obvious Gruul Sideboard Card
+ManaCost:RG RG
+Types:Instant
+A:SP$ Charm | Choices$ DamageFlyer,Shatter,AoEBuff
+
+SVar:DamageFlyer:DB$ DealDamage | ValidTgts$ Creature.withFlying | TgtPrompt$ Select target creature with flying | NumDmg$ 5 | SpellDescription$ Obvious Gruul Sideboard Card deals 5 damage to target creature with flying.
+SVar:Shatter:DB$ Destroy | ValidTgts$ Artifact | SpellDescription$ Destroy target artifact.
+SVar:AoEBuff:DB$ PumpAll | ValidCards$ Creature.YouCtrl | NumAtt$ +1 | NumDef$ +1 | KW$ Trample | SpellDescription$ Creatures you control get +1/+1 and gain trample until end of turn.
+Oracle:Choose one —\n• Obvious Gruul Sideboard Card deals 5 damage to target creature with flying.\n• Destroy target artifact.\n• Creatures you control get +1/+0 and gain trample until end of turn.

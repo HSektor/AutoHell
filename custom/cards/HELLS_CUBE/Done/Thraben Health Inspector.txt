@@ -1,0 +1,9 @@
+Name:Thraben Health Inspector
+ManaCost:W
+Types:Creature Human Soldier
+PT:1/2
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigToken | TriggerDescription$ When NICKNAME enters, create a Food token. (It's an artifact with "{2}, {T}, Sacrifice this artifact: You gain 3 life.")
+S:Mode$ Continuous | Affected$ Food.YouCtrl | AddType$ Clue | AddAbility$ ClueSac | Description$ Each Food you control is a Clue in addition to its other types and has ", Sacrifice this artifact: Draw a card."
+SVar:ClueSac:AB$ Draw | Cost$ 2 Sac<1/CARDNAME/this artifact> | NumCards$ 1 | SpellDescription$ Draw a card.
+SVar:TrigToken:DB$ Token | TokenScript$ c_a_food_sac | TokenOwner$ You
+Oracle:When Thraben Health Inspector enters the battlefield, create a Food token.\nEach Food you control is a Clue in addition to its other types and has "{2}, Sacrifice this artifact: Draw a card."

@@ -1,0 +1,12 @@
+Name:You know exactly what I mean
+ManaCost:1 U
+Types:Creature Illusion Beast
+PT:2/2
+K:MayEffectFromOpeningHand:FromHand
+SVar:FromHand:DB$ ChangeZone | Defined$ Self | Origin$ Hand | Destination$ Battlefield | SpellDescription$ If CARDNAME is in your opening hand, you may begin the game with it on the battlefield.
+T:Mode$ BecomesTarget | ValidTarget$ Card.Self | TriggerZones$ Battlefield | Execute$ TrigSac | TriggerDescription$ When CARDNAME becomes the target of a spell or ability, sacrifice it.
+SVar:TrigSac:DB$ Sacrifice
+SVar:Targeting:Dies
+A:AB$ GainLife | Cost$ 2 T Sac<1/CARDNAME> | LifeAmount$ 3 | SpellDescription$ You gain 3 life.
+DeckHas:Ability$LifeGain|Sacrifice|Token & Type$Food
+Oracle:If "You know exactly what I mean." is in your opening hand, you may begin the game with it on the battlefield.\nWhen "You know exactly what I mean." becomes the target of a spell or ability, sacrifice it.\n{2}, {T}, Sacrifice "You know exactly what I mean.": You gain 3 life.

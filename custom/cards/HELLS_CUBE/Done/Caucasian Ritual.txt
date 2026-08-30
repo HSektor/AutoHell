@@ -1,0 +1,5 @@
+Name:Caucasian Ritual
+ManaCost:W
+Types:Instant
+A:SP$ Mana | Produced$ W | Amount$ 3 | AILogic$ ManaRitual | AINoRecursiveCheck$ True | SpellDescription$ Add {W}{W}{W}.
+Oracle:Add {W}{W}{W}.

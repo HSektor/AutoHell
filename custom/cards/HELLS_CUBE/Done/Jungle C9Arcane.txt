@@ -1,0 +1,8 @@
+Name:Jungle C9Arcane
+ManaCost:no cost
+Types:Land
+K:Cycling:3
+R:Event$ Moved | ValidCard$ Card.Self | Destination$ Battlefield | ReplacementResult$ Updated | ReplaceWith$ ETBTapped | Description$ CARDNAME enters tapped.
+SVar:ETBTapped:DB$ Tap | Defined$ Self | ETB$ True
+A:AB$ Mana | Cost$ T | Produced$ Combo R G W | SpellDescription$ Add {R}, {G}, or {W}.
+Oracle:Jungle C9Arcane enters tapped.\n{T}: Add {R}, {G}, or {W}.\nCycling {3} ({3}, Discard this card: Draw a card.)

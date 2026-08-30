@@ -1,0 +1,8 @@
+Name:Wuhan
+ManaCost:no cost
+Types:Land
+R:Event$ Moved | ValidCard$ Card.Self | Destination$ Battlefield | ReplacementResult$ Updated | ReplaceWith$ ETBTapped | Description$ CARDNAME enters tapped.
+SVar:ETBTapped:DB$ Tap | Defined$ Self | ETB$ True
+A:AB$ Mana | Cost$ T | Produced$ Combo U B | SpellDescription$ Add {U} or {B}.
+A:AB$ Pump | Cost$ 2 B | ValidTgts$ Creature | KW$ Infect | SpellDescription$ Target creature gains infect until end of turn. Activate only as a sorcery.
+Oracle:Wuhan enters tapped.\n{T}: Add {U} or {B}.\n{2}{B}, {T}: Target creature gains infect until end of turn. Activate this ability only any time you could cast a sorcery.

@@ -1,0 +1,8 @@
+Name:Opt Twice
+ManaCost:U U
+Types:Instant
+A:SP$ Scry | ScryNum$ 1 | SubAbility$ DBDraw | SpellDescription$ Scry 1.
+SVar:DBDraw:DB$ Draw | Defined$ You | NumCards$ 1 | SubAbility$ DBScryAgain | SpellDescription$ Draw a card.
+SVar:DBScryAgain:DB$ Scry | ScryNum$ 1 | SubAbility$ DBDrawAgain | SpellDescription$ Scry 1.
+SVar:DBDrawAgain:DB$ Draw | Defined$ You | NumCards$ 1 | SpellDescription$ Draw a card.
+Oracle:Scry 1.\nDraw a card.\nScry 1.\nDraw a card.

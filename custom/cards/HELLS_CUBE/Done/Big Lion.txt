@@ -1,0 +1,4 @@
+Name:Big Lion
+ManaCost:W W W W W
+Types:Creature Gpd
+PT:10/10

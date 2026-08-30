@@ -1,0 +1,6 @@
+Name:Colossal Time Warp
+ManaCost:1 U G
+Types:Instant
+A:SP$ SkipTurn | ValidTgts$ Player | NumTurns$ 1 | SpellDescription$ Target player's next turn becomes a Colossal Dreadmaw. | SubAbility$ DBDreadmaw
+SVar:DBDreadmaw:DB$ MakeCard | Name$ Colossal Dreadmaw | TokenCard$ True | Zone$ Battlefield | Defined$ TargetedPlayer
+Oracle:Target player's next turn becomes a Colossal Dreadmaw. (They skip the turn and create a token copy of Colossal Dreadmaw.)

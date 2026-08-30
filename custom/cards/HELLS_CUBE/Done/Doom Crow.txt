@@ -1,0 +1,8 @@
+Name:Doom Crow
+ManaCost:1 U
+Types:Creature Bird
+PT:1/2
+K:Flying
+K:Flash
+A:AB$ Destroy | Cost$ 1 B Sac<1/CARDNAME> | ValidTgts$ Creature.nonBlack | TgtPrompt$ Select target nonblack creature | AITgts$ BetterThanSource | SpellDescription$ Destroy target nonblack creature.
+Oracle:Flying (This creature can't be blocked except by creatures with flying or reach.)\n{1}{B}, Sacrifice Doom Crow: Destroy target nonblack creature.

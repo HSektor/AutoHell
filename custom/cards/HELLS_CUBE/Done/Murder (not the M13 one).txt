@@ -1,0 +1,6 @@
+Name:Murder (not the M13 one)
+ManaCost:1 B B
+Types:Sorcery
+A:SP$ CopyPermanent | DefinedName$ Storm Crow | NumCopies$ 3 | SubAbility$ DBLoseLife | SpellDescription$ Create 3 1/2 blue Bird creature tokens with flying named Storm Crow.
+SVar:DBLoseLife:DB$ LoseLife | LifeAmount$ 3
+Oracle: Create 3 1/2 blue Bird creature tokens with flying named Storm Crow.\nYou lose 3 life.

@@ -1,0 +1,12 @@
+Name:Primate Command
+ManaCost:3 G G
+Types:Sorcery
+
+A:SP$ Charm | Choices$ ModeA,ModeB,ModeC,ModeD | CharmNum$ 2
+
+SVar:ModeA:DB$ Token | TokenOwner$ You  | TokenScript$ g_3_3_ape | SpellDescription$ Create a 3/3 green Ape creature token.
+SVar:ModeB:DB$ Token | TokenOwner$ You  | TokenScript$ g_3_3_ape | SpellDescription$ Create a 3/3 green Ape creature token.
+SVar:ModeC:DB$ Token | TokenOwner$ You  | TokenScript$ g_3_3_ape | SpellDescription$ Create a 3/3 green Ape creature token.
+SVar:ModeD:DB$ Token | TokenOwner$ You  | TokenScript$ g_3_3_ape | SpellDescription$ Create a 3/3 green Ape creature token.
+
+Oracle:Choose two —\n• Create a 3/3 green Ape creature token.\n• Create a 3/3 green Ape creature token.\n• Create a 3/3 green Ape creature token.\n• Create a 3/3 green Ape creature token.

@@ -1,0 +1,7 @@
+Name:Judge of Voke
+ManaCost:3 W W
+Types:Creature Human Advisor
+PT:3/3
+K:Provoke
+K:Convoke
+Oracle: Provoke\nConvoke

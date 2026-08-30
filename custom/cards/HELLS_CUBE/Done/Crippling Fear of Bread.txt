@@ -1,0 +1,16 @@
+Name:Crippling Fear of Bread
+ManaCost:2 B
+Types:Enchantment Aura
+K:Enchant:Creature
+
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ DBBread | TriggerZones$ Battlefield | TriggerDescription$ When CARDNAME enters the battlefield, create a Food token.
+
+T:Mode$ Phase | Phase$ Upkeep | ValidPlayer$ You | TriggerZones$ Battlefield | Execute$ DBBread | TriggerDescription$ At the beginning of your upkeep, create a Food token.
+
+SVar:DBBread:DB$ Token | TokenScript$ c_a_food_sac
+
+S:Mode$ Continuous | Affected$ Creature.AttachedBy | AddPower$ -X | AddToughness$ -X | Description$ Enchanted creature gets -1/-1 for each Food you control.
+
+SVar:X:Count$Valid Food.YouCtrl
+
+Oracle:Enchant creature\nWhen Crippling Fear of Bread enters the battlefield and at the beginning of your upkeep, create a Food token.\nEnchanted creature gets -1/-1 for each Food you control.

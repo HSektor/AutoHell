@@ -1,0 +1,9 @@
+Name:Alexandria
+ManaCost:no cost
+Types:Land
+R:Event$ Moved | ValidCard$ Card.Self | Destination$ Battlefield | ReplacementResult$ Updated | ReplaceWith$ ETBTapped | Description$ CARDNAME enters tapped.
+SVar:ETBTapped:DB$ Tap | Defined$ Self | ETB$ True
+A:AB$ Mana | Cost$ T | Produced$ Combo u R | SpellDescription$ Add {U} or {R}.
+A:AB$ Draw | Cost$ 1 R T | Defined$ Player | NumCards$ 3 | SubAbility$ DBDiscard3 | SpellDescription$ Each player draws three cards, then discards three cards at random.
+SVar:DBDiscard3:DB$ Discard | Defined$ Player | Mode$ Random | NumCards$ 3
+Oracle:Alexandria enters the battlefield tapped.\n{T}: Add {U} or {R}.\n{1}{R}, {T}: Each player draws 3 cards, then discards 3 cards at random.

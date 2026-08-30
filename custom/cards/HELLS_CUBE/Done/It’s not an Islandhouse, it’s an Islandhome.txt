@@ -1,0 +1,5 @@
+Name:It’s not an Islandhouse, it’s an Islandhome
+ManaCost:no cost
+Types:Legendary Land
+S:Mode$ Continuous | Affected$ Land | AddType$ Island | Description$ Each land is a Island in addition to its other land types.
+Oracle:Each land is a Island in addition to its other land types.

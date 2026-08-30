@@ -1,0 +1,19 @@
+Name:Spell Slang
+ManaCost:1 U
+Types:Instant
+A:SP$ Charm | Choices$ Blink,Bounce,Mill,Loot
+
+SVar:Blink:DB$ ChangeZone | TargetMin$ 1 | ValidTgts$ Creature | TgtPrompt$ Select target creature | RememberChanged$ True | Origin$ Battlefield | Destination$ Exile | SubAbility$ DBReturn | SpellDescription$ Exile target creature, then return it to the battlefield under its owner's control.
+SVar:DBReturn:DB$ ChangeZone | Defined$ Remembered | Origin$ Exile | SubAbility$ DBCleanup | Destination$ Battlefield
+SVar:DBCleanup:DB$ Cleanup | ClearRemembered$ True
+
+SVar:Bounce:DB$ ChangeZone | ValidTgts$ Creature | Origin$ Battlefield | Destination$ Hand | SpellDescription$ Return target creature to its owner's hand.
+
+SVar:Mill:DB$ Mill | NumCards$ 5 | ValidTgts$ Player | SpellDescription$ Target player puts the top five cards of their library into their graveyard.
+
+SVar:Loot:DB$ Draw | Defined$ You | NumCards$ 2 | SubAbility$ TrigDiscard | SpellDescription$ Draw two cards, then discard two cards.
+SVar:TrigDiscard:DB$ Discard | Defined$ You | NumCards$ 2 | Mode$ TgtChoose
+
+DeckHas:Ability$Graveyard|Discard
+
+Oracle:Choose one —\n• Blink target creature.\n• Bounce target creature.\n• Target player puts the top five cards of their library into their graveyard.\n• Loot 2.

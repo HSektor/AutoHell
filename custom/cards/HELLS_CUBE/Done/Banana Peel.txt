@@ -1,0 +1,9 @@
+Name:Banana Peel
+ManaCost:G
+Types:Creature Food
+PT:1/2
+K:Flash
+K:Defender
+T:Mode$ AttackerBlocked | ValidCard$ Creature.withHaste | ValidBlocker$ Card.Self | Execute$ TrigPump | TriggerDescription$ Whenever Banana Peel blocks a creature with haste, it gains deathtouch until end of turn.
+SVar:TrigPump:DB$ Pump | Defined$ Self | KW$ First Strike
+Oracle:Flash\nDefender\nWhenever Banana Peel blocks a creature with haste, it gains deathtouch until end of turn.

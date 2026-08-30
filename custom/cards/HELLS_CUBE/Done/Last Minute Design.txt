@@ -1,0 +1,7 @@
+Name:Last Minute Design
+ManaCost:2 W
+Types:Instant
+A:SP$ ChangeZone | ValidTgts$ Artifact,Enchantment | TgtPrompt$ Select target artifact or enchantment | Origin$ Battlefield | Destination$ Exile | SubAbility$ DBFood | SpellDescription$ Exile target artifact or enchantment.
+SVar:DBFood:DB$ Token | TokenScript$ c_a_food_sac | SpellDescription$ Create a Food token. (It's an artifact with "{2}, {T}, Sacrifice this artifact: You gain 3 life.")
+DeckHas:Ability$Sacrifice|LifeGain & Type$Food|Artifact
+Oracle:Exile target artifact or enchantment. Create a Food token. (It's an artifact with "{2}, {T}, Sacrifice this artifact: You gain 3 life.")

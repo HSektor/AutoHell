@@ -1,0 +1,6 @@
+Name:Card Draw Cruise
+ManaCost:5 B
+Types:Sorcery
+K:Delve
+A:SP$ Token | TokenAmount$ 3 | TokenScript$ c_a_treasure_sac | TokenOwner$ You
+Oracle:Create three Treasure tokens.

@@ -1,0 +1,16 @@
+Name:Three Kobolds in a Trenchcoat
+ManaCost:R
+Types:Creature Human
+PT:3/3
+
+T:Mode$ Blocks | ValidCard$ Card.Self | Execute$ DBSplit | TriggerDescription$ When Three Kobolds in a Trenchcoat blocks, exile it and create three 0/1 red Kobold creature tokens with haste.
+
+T:Mode$ AttackerBlocked | ValidCard$ Card.Self | Execute$ DBSplit | TriggerDescription$ When Three Kobolds in a Trenchcoat becomes blocked, exile it and create three 0/1 red Kobold creature tokens with haste.
+
+T:Mode$ BecomesTarget | ValidCard$ Card.Self | Execute$ DBSplit | TriggerZones$ Battlefield | TriggerDescription$ When Three Kobolds in a Trenchcoat becomes the target of a spell or ability, exile it and create three 0/1 red Kobold creature tokens with haste.
+
+SVar:DBSplit:DB$ ChangeZone | Defined$ Self | Destination$ Exile | SubAbility$ DBTokens
+
+SVar:DBTokens:DB$ Token | TokenAmount$ 3 | TokenScript$ r_0_1_kobold_haste
+
+Oracle: Whenever Three Kobolds in a Trenchcoat blocks, becomes blocked or becomes the target of a spell of ability, exile it and create three 0/1 red Kobold creature tokens with haste.

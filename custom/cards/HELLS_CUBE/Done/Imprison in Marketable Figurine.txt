@@ -1,0 +1,8 @@
+Name:Imprison in Marketable Figurine
+ManaCost:2 U
+Types:Enchantment Aura
+K:Enchant creature
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ DBGoldToken | TriggerDescription$ When CARDNAME enters the battlefield, create a Gold token.
+SVar:DBGoldToken:DB$ Token | TokenAmount$ 1 | TokenScript$ c_a_gold_sac | TokenOwner$ You
+S:Mode$ Continuous | Affected$ Creature.EnchantedBy | RemoveAllAbilities$ True | SetPower$ 1 | SetToughness$ 1 | AddKeyword$ Indestructible | Description$ Enchanted creature loses all abilities and becomes a 1/1 toy with indestructible.
+Oracle:Enchant creature\nWhen Imprison in Marketable Figurine enters the battlefield, create a Gold token.\nEnchanted creature loses all abilities and becomes a 1/1 toy with indestructible.

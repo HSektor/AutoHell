@@ -1,0 +1,6 @@
+Name:Dennis
+ManaCost:3 B B
+Types:Legendary Creature Human Rogue
+PT:4/6
+K:Menace
+Oracle:Menace

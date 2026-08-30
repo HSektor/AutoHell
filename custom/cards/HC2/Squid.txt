@@ -1,0 +1,6 @@
+Name:Squid
+ManaCost:3 U
+Types:Legendary Creature Squid
+PT:4/4
+K:Ward:4
+Oracle:Ward {4}

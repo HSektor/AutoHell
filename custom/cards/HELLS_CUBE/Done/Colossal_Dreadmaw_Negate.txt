@@ -1,0 +1,15 @@
+Name:Colossal Dreadmaw (and Negate)
+ManaCost:4 G G
+Types:Creature Dinossaur
+PT:6/6
+K:Trample
+AlternateMode:Adventure
+Oracle:Trample
+
+ALTERNATE
+
+Name:Negate
+ManaCost:1 U
+Types:Instant Adventure
+A:SP$ Counter | TargetType$ Spell | TgtPrompt$ Select target spell noncreature spll | ValidTgts$ Card.nonCreature | SpellDescription$ Counter target noncreature spell. (Then exile this card. You may cast the creature later from exile.)
+Oracle:Counter target noncreature spell. (Then exile this card. You may cast the creature later from exile.)

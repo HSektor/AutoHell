@@ -1,0 +1,6 @@
+Name:Kobold Token
+ManaCost:no cost
+Types:Creature Kobold
+Colors:R
+PT:0/1
+K:Haste

@@ -1,0 +1,15 @@
+Name:Bill Nye the Science Guy
+ManaCost:2 U
+Types:Legendary Creature Bill
+PT:2/3
+S:Mode$ Continuous | Affected$ Card.YouCtrl+wasCast+hasXCost | AffectedZone$ Stack | AddKeyword$ Improvise & Delve | Description$ Spells you cast with X in their mana cost have improvise and delve.
+AlternateMode:Adventure
+Oracle:Spells you cast with {X} in their mana cost have improvise and delve.
+
+ALTERNATE
+
+Name:Science Rules!
+ManaCost:R
+Types:Sorcery Adventure
+A:SP$ MakeCard | Conjure$ True | Name$ Epic Experiment | Zone$ Hand | SpellDescription$ Conjure a Epic Experiment card into your hand.
+Oracle:Conjure a Epic Experiment card into your hand.

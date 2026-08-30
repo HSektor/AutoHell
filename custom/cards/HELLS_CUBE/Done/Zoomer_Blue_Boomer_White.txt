@@ -1,0 +1,14 @@
+Name:Zoomer Blue
+ManaCost:U
+Types:Sorcery
+A:SP$ Draw | NumCards$ 1 | SpellDescription$ Draw a card.
+Oracle:Draw a card
+AlternateMode:Split
+
+ALTERNATE
+
+Name:Boomer White
+ManaCost:2 W
+Types:Sorcery
+A:SP$ Draw | NumCards$ 2 | SpellDescription$ Draw two cards.
+Oracle:Draw two cards.

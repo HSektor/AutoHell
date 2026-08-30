@@ -1,0 +1,10 @@
+Name:Weed Token
+ManaCost:no cost
+Types:Artifact Weed Food
+
+A:AB$ FlipACoin | Cost$ 2 Sac<1/CARDNAME> | WinSubAbility$ DBWinFlip | LoseSubAbility$ DBLoseFlip | SpellDescription$ Flip a coin. If you win the flip, gain 6 life. Otherwise, lose 3 life.
+
+SVar:DBWinFlip:DB$ GainLife | LifeAmount$ 6
+SVar:DBLoseFlip:DB$ LoseLife | LifeAmount$ 3
+
+Oracle:2, Sacrifice this artifact: Flip a coin. If you win the flip, gain 6 life. Otherwise, lose 3 life.

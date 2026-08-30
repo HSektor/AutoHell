@@ -1,0 +1,7 @@
+Name:Hehehehehehehehe
+ManaCost:1 U
+Types: Planeswalker Perter Griffin
+Loyalty:2
+A:AB$ Effect | StaticAbilities$ HBReduceCost | Planeswalker$ True | Cost$ AddCounter<1/LOYALTY> | Duration$ Permanent | ForgetOnCast$ Card
+SVar:HBReduceCost:Mode$ ReduceCost | Type$ Spell | Amount$ 1 | Description$ the next spell costs {1} less to cast.
+Oracle:[+1]: The next spell costs {1} less to cast.

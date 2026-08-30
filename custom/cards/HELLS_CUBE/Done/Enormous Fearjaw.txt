@@ -1,0 +1,6 @@
+Name:Pride of Lions
+ManaCost:4 G
+Types:Creature Lizard Beast
+PT:4/4
+S:Mode$ AssignCombatDamageAsUnblocked | ValidCard$ Card.Self | Optional$ True | Description$ Unstoppable
+Oracle:Unstoppable (You may have this creature assign its combat damage as though it wern’t blocked.)

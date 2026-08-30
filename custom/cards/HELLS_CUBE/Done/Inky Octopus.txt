@@ -1,0 +1,7 @@
+Name:Inky Octopus
+ManaCost:3 U U
+Types:Creature Cephalid Artist
+PT:3/5
+T:Mode$ DamageDone | ValidSource$ Card.Self | ValidTarget$ Opponent | TriggerZones$ Battlefield | Execute$ TrigInk | TriggerDescription$ Whenever CARDNAME deals damage to an opponent, draw a card.
+SVar:TrigInk:DB$ Mana | Produced$ B | Amount$ InkX | PersistentMana$ True
+SVar:InkX:TriggerCount$DamageAmount

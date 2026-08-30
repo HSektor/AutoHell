@@ -1,0 +1,8 @@
+Name:Gruul-Clan Scholar
+ManaCost:X RG RG RG
+Types:Creature Orc Shaman
+PT:4/1
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigDraw | TriggerDescription$ When CARDNAME enters, draw X cards.
+SVar:TrigDraw:DB$ Draw | Defined$ You | NumCards$ X
+SVar:X:Count$xPaid
+Oracle:When Gruul-Clan Scholar enters, draw X cards.

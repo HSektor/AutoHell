@@ -1,0 +1,8 @@
+Name:Country Roads 
+ManaCost:no cost
+Types:Land
+R:Event$ Moved | ValidCard$ Card.Self | Destination$ Battlefield | ReplacementResult$ Updated | ReplaceWith$ ETBTapped | Description$ CARDNAME enters tapped.
+SVar:ETBTapped:DB$ Tap | Defined$ Self | ETB$ True
+A:AB$ Mana | Cost$ T | Produced$ Combo G R | SpellDescription$ Add {R} or {G}.
+A:AB$ GainControlVariant | Cost$ 1 T | AILogic$ GainControlOwns | AllValid$ Creature | ChangeController$ CardOwner | SpellDescription$ Each player gains control of all creatures they own.
+Oracle:Country Roads enters the battlefield tapped.\n{T}: Add {R} or {G}.\n{1}, {T}: Each player gains control of all creatures they own.

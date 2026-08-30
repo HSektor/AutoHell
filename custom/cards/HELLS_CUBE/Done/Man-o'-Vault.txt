@@ -1,0 +1,10 @@
+Name:Man-o'-Vault
+ManaCost:2 U
+Types:Artifact Creature Jellyfish
+PT:2/2
+R:Event$ Untap | ValidCard$ Card.Self | ValidStepTurnToController$ You | Layer$ CantHappen | Description$ Man-o'-Vault doesn't untap during your untap step.
+T:Mode$ Phase | Phase$ Upkeep | ValidPlayer$ You | TriggerZones$ Battlefield | OptionalDecider$ You | Execute$ TrigUntap | TriggerDescription$ At the beginning of your upkeep, you may pay {4}. If you do, untap this artifact.
+SVar:TrigUntap:AB$ Untap | Cost$ 4 | Defined$ Self
+A:AB$ ChangeZone | Cost$ T | ValidTgts$ Creature | TgtPrompt$ Select target creature to bounce | Origin$ Battlefield | Destination$ Hand | SpellDescription$ Return target creature to its owner's hand.
+SVar:UntapMe:True
+Oracle:Man-O'-Vault doesn't untap during your untap step.\nAt the beginning of your upkeep, you may pay {4}. If you do, untap Man-O'-Vault.\n{T} : Return target creature to its owner's hand.

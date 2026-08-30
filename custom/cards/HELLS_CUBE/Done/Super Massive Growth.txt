@@ -1,0 +1,5 @@
+Name:Super Massive Growth
+ManaCost:G G G
+Types:Instant
+A:SP$ Pump | ValidTgts$ Creature | NumAtt$ +9 | NumDef$ +9 | SpellDescription$ Target creature gets +9/+9 until end of turn.
+Oracle:Target creature gets +9/+9 until end of turn.

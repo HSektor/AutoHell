@@ -1,0 +1,6 @@
+Name:Doge
+ManaCost:2 B
+Types:Creature Doge
+PT:3/4
+
+Oracle:(This creature has no abilities.)

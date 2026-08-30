@@ -1,0 +1,9 @@
+Name:Birder
+ManaCost:1 G G
+Types:Creature Bird
+PT:1/1
+K:Flash
+K:Deathtouch
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigFight | TriggerDescription$ When Birder enters the battlefield, it fights target creature.
+SVar:TrigFight:DB$ Fight | Defined$ TriggeredCardLKICopy | ValidTgts$ Creature | TgtPrompt$ Choose target creature
+Oracle:Flash, deathtouch\nWhen Birder enters the battlefield, it fights target creature.

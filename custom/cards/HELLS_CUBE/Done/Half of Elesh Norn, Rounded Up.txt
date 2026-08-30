@@ -1,0 +1,9 @@
+Name: Half of Elesh Norn, Rounded Up
+ManaCost:3 W
+Types:Creature Praetor
+PT:2/4
+K:Vigilance
+S:Mode$ Continuous | Affected$ Creature.YouCtrl+Other | AddPower$ 1 | AddToughness$ 1 | Description$ Other creatures you control get +1/+1.
+S:Mode$ Continuous | Affected$ Creature.OppCtrl | AddPower$ -1 | AddToughness$ -1 | Description$ Creatures your opponents control get -1/-1.
+SVar:PlayMain1:TRUE
+Oracle:Vigilance\nOther creatures you control get +1/+1.\nCreatures your opponents control get -1/-1.

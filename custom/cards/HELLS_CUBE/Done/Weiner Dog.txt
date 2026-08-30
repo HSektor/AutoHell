@@ -1,0 +1,9 @@
+Name:Weiner Dog
+ManaCost:1 G W
+Types:Creature Dog
+PT:2/2
+T:Mode$ DamageDealtOnce | ValidSource$ Card.Self | TriggerZones$ Battlefield | Execute$ TrigToken | TriggerDescription$ Sausagelink (Damage dealt by this creature also causes you to create that many Food tokens.)
+SVar:TrigToken:DB$ Token | TokenAmount$ X | TokenScript$ c_a_food_sac
+SVar:X:TriggerCount$DamageAmount
+S:Mode$ Continuous | Affected$ Food.token+YouCtrl | SetPower$ 1 | SetToughness$ 1 | AddType$ Creature & Dog | Description$ Food tokens you control are 1/1 Dog creatures in addition to their other types.
+Oracle:Sausagelink (Damage dealt by this creature also causes you to create that many Food tokens.)\nFood tokens you control are 1/1 Dog creatures in addition to their other types.
