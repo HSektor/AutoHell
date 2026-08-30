@@ -15,11 +15,15 @@ Hell's Cube is a collection of humorous and insane cards made by a bunch the Mag
 Ok, ok, geez!
 
 On Windows:
+
 0. Download and install [Forge](https://github.com/Card-Forge/forge)
 1. Download the repository in .zip form
 2. Extract files on the /custom folder to %appdata%/Forge/custom
 3. Extract files on the /pics folder to %localappdata%/Forge/Cache/pics
 4. Enjoy!
+
+On other systems:
+ TBA
 
 ## What do I do with all those goofy ahh cards?
 For now, create constructed decks and play with the AI! They can also appear on the Adventure mode! They were not tested on Multiplayer yet, but they should work there too.
