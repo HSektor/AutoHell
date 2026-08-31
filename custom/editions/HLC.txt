@@ -3,6 +3,7 @@ Code=HLC
 Name=Hell's Cube
 Date=2026-01-05
 Type=Custom
+Booster=10 Common, 3 Uncommon, 1 RareMythic, 1 BasicLand
 
 [cards]
 1 U Big Lion
@@ -110,6 +111,21 @@ Type=Custom
 101 U Murder (not the M13 one)
 102 R Vhat, Sponsored Champion
 103 M Monastery Mentor (HC)
+230 L Plains
+231 L Plains
+232 L Plains
+233 L Island
+234 L Island
+235 L Island
+236 L Swamp
+237 L Swamp
+238 L Swamp
+239 L Mountain
+240 L Mountain
+241 L Mountain
+242 L Forest
+243 L Forest
+244 L Forest
 
 [tokens]
 1 c_a_food_sac
