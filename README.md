@@ -1,3 +1,5 @@
+![Screenshot](https://github.com/HSektor/AutoHell/blob/main/Screenshot1.png)
+
 # What is Automated Hell?
 Automated Hell is a mod to the MTG Forge engine with cards from the Hell's Cube! Check the list of cards implemented on the [changelog](https://github.com/HSektor/AutoHell/blob/main/Changelog.md).
 
