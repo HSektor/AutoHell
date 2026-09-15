@@ -1,0 +1,7 @@
+Name:Spatula
+ManaCost:1
+Types:Artifact
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigToken | TriggerDescription$ When NICKNAME enters, create a Food token. (It's an artifact with "{2}, {T}, Sacrifice this artifact: You gain 3 life.")
+SVar:TrigToken:DB$ Token | TokenScript$ c_a_food_sac | TokenOwner$ You
+A:AB$ SetState | Cost$ 1 T | ValidTgts$ Food | Mode$ TurnFaceDown | FaceDownSetType$ Creature | FaceDownPower$ 2 | FaceDownToughness$ 2 | SpellDescription$ Flip target Food over. (It’s a 2/2 creature.)
+Oracle:When Spatula enters the battlefield, create a Food token.\n{1}, {T}: Flip target Food over. (It’s a 2/2 creature.)

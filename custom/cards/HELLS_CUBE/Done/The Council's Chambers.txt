@@ -1,0 +1,8 @@
+Name:The Council's Chambers
+ManaCost:no cost
+Types:Land
+K:Cycling:3
+R:Event$ Moved | ValidCard$ Card.Self | Destination$ Battlefield | ReplacementResult$ Updated | ReplaceWith$ ETBTapped | Description$ CARDNAME enters tapped.
+SVar:ETBTapped:DB$ Tap | Defined$ Self | ETB$ True
+A:AB$ Mana | Cost$ T | Produced$ Combo B R G | SpellDescription$  Add {B}, {R}, or {G}
+Oracle:The Council’s Chambers enters tapped.\n{T}: Add {B}, {R}, or {G}\nCycling {3} ({3}, Discard this card: Draw a card.)

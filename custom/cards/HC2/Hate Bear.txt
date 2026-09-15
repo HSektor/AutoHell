@@ -1,0 +1,8 @@
+Name:Hate Bear
+ManaCost:1 G
+Types:Creature Bear
+PT:2/2
+T:Mode$ ChangesZone | Origin$ Battlefield | Destination$ Graveyard | ValidCard$ Card.Self | Execute$ TrigChangeZone | TriggerDescription$ When CARDNAME dies, return CARDNAME to its owner's hand.
+SVar:TrigChangeZone:DB$ ChangeZone | Origin$ Graveyard | Destination$ Hand | Defined$ TriggeredNewCardLKICopy
+SVar:SacMe:2
+Oracle:When Hate Bear dies, return it to its owner's hand.

@@ -1,0 +1,10 @@
+Name:Bread Return
+ManaCost:2 B B
+Types:Sorcery
+A:SP$ ChangeZone | Origin$ Graveyard | Destination$ Battlefield | TgtPrompt$ Choose target creature card in your graveyard | ValidTgts$ Creature.YouCtrl | SubAbility$ DBToken | SpellDescription$ Return target creature card from your graveyard to the battlefield. If it’s an artifact, create a Food token.
+SVar:DBToken:DB$ Token | TokenAmount$ 1 | TokenScript$ c_a_food_sac | TokenOwner$ You | ConditionCheckSVar$ X | ConditionSVarCompare$ GE1
+SVar:X:Targeted$Valid Artifact
+K:Flashback:Sac<3/Food>
+DeckHints:Type$Food
+DeckHas:Ability$Sacrifice
+Oracle:Return target creature card from your graveyard to the battlefield. If it’s an artifact, create a Food token\nFlashback—Sacrifice three Foods. (You may cast this card from your graveyard for its flashback cost. Then exile it.)

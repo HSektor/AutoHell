@@ -1,0 +1,8 @@
+Name:Amsterdam
+ManaCost:no cost
+Types:Land
+R:Event$ Moved | ValidCard$ Card.Self | Destination$ Battlefield | ReplacementResult$ Updated | ReplaceWith$ ETBTapped | Description$ CARDNAME enters tapped.
+SVar:ETBTapped:DB$ Tap | Defined$ Self | ETB$ True
+A:AB$ Mana | Cost$ T | Produced$ Combo B G | SpellDescription$ Add {B} or {G}.
+A:AB$ Token | Cost$ 1 G T | TokenScript$ c_a_weed_sac | TokenAmount$ 1 | SpellDescription$ Create a Weed token. 
+Oracle:Amsterdam enters the battlefield tapped.\n{T}: Add {B} or {G}.\n{1}{G}, {T}: Create a Weed token. 

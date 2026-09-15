@@ -1,0 +1,7 @@
+Name:Sneaky Lotus
+ManaCost:5
+Types:Kindred Artifact Ninja
+K:Ninjutsu:0
+A:AB$ Mana | Cost$ T Sac<1/CARDNAME> | Produced$ Any | Amount$ 3 | AILogic$ BlackLotus | SpellDescription$ Add three mana of any one color.
+DeckHas:Ability$Sacrifice
+Oracle:Ninjutsu {0}\n{T}, Sacrifice Sneaky Lotus: Add three mana of any one color.

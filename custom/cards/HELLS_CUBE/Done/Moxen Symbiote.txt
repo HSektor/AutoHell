@@ -1,0 +1,7 @@
+Name:Moxen Symbiote
+ManaCost:3
+Types:Artifact Creature Elemental
+PT:1/1
+K:Mutate:0
+A:AB$ Mana | Cost$ T | Produced$ Any | SpellDescription$ Add one mana of any color.
+Oracle:Mutate {0} (If you cast this spell for its mutate cost, put it over or under target non-Human creature you own. They mutate into the creature on top plus all abilities from under it.)\n{T}: Add one mana of any color.

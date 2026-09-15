@@ -1,0 +1,9 @@
+Name:Beijing
+ManaCost:no cost
+Types:Land
+Colors:black,red
+R:Event$ Moved | ValidCard$ Card.Self | Destination$ Battlefield | ReplacementResult$ Updated | ReplaceWith$ ETBTapped | Description$ CARDNAME enters tapped.
+SVar:ETBTapped:DB$ Tap | Defined$ Self | ETB$ True
+A:AB$ Mana | Cost$ T | Produced$ Combo B R | SpellDescription$ Add {B}, or {R}.
+A:AB$ Destroy | Cost$ T 1 B R | ValidTgts$ Creature.powerEQ2+toughnessEQ2,Bear | TgtPrompt$ Select target 2/2 creature or Bear | SpellDescription$ Destroy target 2/2 creature or Bear.
+Oracle:Beijing enters tapped.\n{T}: Add {B}, or {R}.\n{1}{B}{R}, {T}:Destroy target 2/2 creature or Bear.

@@ -1,0 +1,7 @@
+Name:Pyroduct
+ManaCost:no cost
+Types:Land
+K:Cycling:1 BR
+A:AB$ Mana | Cost$ T PayLife<1> | Produced$ Combo B R | SpellDescription$ Add {B} or {R}.
+K:Unearth:PayLife<1>
+Oracle:{T}, Pay 1 life: Add {B} or {R}.\nCycling {1}{B/R}\nUnearth—Pay 1 life 

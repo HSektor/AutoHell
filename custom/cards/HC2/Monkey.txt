@@ -1,0 +1,7 @@
+Name:Monkey
+ManaCost:R
+Types:Creature Monkey
+PT:2/1
+T:Mode$ DamageDone | ValidSource$ Card.Self | ValidTarget$ Player | Execute$ TrigMonkey | CombatDamage$ True | OptionalDecider$ You | TriggerDescription$ When CARDNAME enters the battlefield, you may discard a card. If you do, add a token copy of Monkey to your hand.
+SVar:TrigMonkey:DB$ MakeCard | Cost$ Discard<1/Card> | Conjure$ True | Name$ Monkey | Zone$ Hand | SpellDescription$ Conjure a Monkey into your hand.
+Oracle:When Monkey enters the battlefield, you may discard a card. If you do, add a token copy of Monkey to your hand.

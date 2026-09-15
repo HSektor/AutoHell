@@ -1,0 +1,9 @@
+Name:Prized Lotus Tea
+ManaCost:0
+Types:Artifact Clue Food Treasure
+A:AB$ Charm | Cost$ 2 T Sac<1/CARDNAME> | Choices$ DBGainLife,DBDraw,DBRitual
+SVar:DBGainLife:DB$ GainLife | ValidTgts$ Player | LifeAmount$ 3 | SpellDescription$ Target player gains 3 life.
+SVar:DBDraw:DB$ Draw | Defined$ You | NumCards$ 1 | SpellDescription$ Draw a card.
+SVar:DBRitual:DB$ Mana | Produced$ Any | Amount$ 3 | SpellDescription$ Add three mana of any one color.
+DeckHas:Ability$Sacrifice
+Oracle:{2}, {T}, Sacrifice Prized Lotus Tea: Choose one —\n• Cloak the top card of your library.\n• Goad target creature.\n• Draw a card.

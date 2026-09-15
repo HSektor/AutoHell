@@ -1,0 +1,8 @@
+Name:Simic Cygnet
+ManaCost:G G
+Types:Creature Bird
+PT:2/2
+K:Flying
+K:Evolve
+A:AB$ Mana | Cost$ 1 SubCounter<1/P1P1> | Produced$ G U | SpellDescription$ Add {G}{U}.
+Oracle:Flying\nEvolve\n{1}, Remove a +1/+1 counter from Simic Cygnet: Add {G}{U}.

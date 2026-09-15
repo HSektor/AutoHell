@@ -1,0 +1,8 @@
+Name:cirion02’s Art Folder
+ManaCost:no cost
+Types:Land
+K:Cycling:3
+R:Event$ Moved | ValidCard$ Card.Self | Destination$ Battlefield | ReplacementResult$ Updated | ReplaceWith$ ETBTapped | Description$ CARDNAME enters tapped.
+SVar:ETBTapped:DB$ Tap | Defined$ Self | ETB$ True
+A:AB$ Mana | Cost$ T | Produced$ Combo U R W | SpellDescription$  Add {U}, {R}, or {W}
+Oracle:cirion02’s Art Folder enters tapped.\n{T}: Add {U}, {R}, or {W}\nCycling {3} ({3}, Discard this card: Draw a card.)

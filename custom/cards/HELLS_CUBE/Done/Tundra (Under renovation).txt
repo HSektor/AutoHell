@@ -1,0 +1,7 @@
+Name:Tundra (Under renovation)
+ManaCost:no cost
+Types:Land Plains Island
+R:Event$ Moved | ValidCard$ Card.Self | Destination$ Battlefield | ReplaceWith$ LandTapped | ReplacementResult$ Updated | Description$ CARDNAME enters the battlefield tapped during your first or second turns of the game.
+SVar:LandTapped:DB$ Tap | Defined$ Self | ETB$ True | ConditionCheckSVar$ X | ConditionSVarCompare$ LT3
+SVar:X:Count$YourTurns
+Oracle:Tundra (under renovation) enters the battlefield tapped during your first or second turns of the game.\n({T}: Add {W} or {U}.)

@@ -1,0 +1,6 @@
+Name:Phyrexian Mana Confluence
+ManaCost:no cost
+Types:Land
+A:AB$ Mana | Cost$ T PayLife<2> | Produced$ Any | Amount$ 1 | SpellDescription$ Add one mana of any color.
+A:AB$ Mana | Cost$ T 1 | Produced$ Any | Amount$ 1 | SpellDescription$ Add one mana of any color.
+Oracle:{T}, Pay 2 life or {1}: Add one mana of any color.

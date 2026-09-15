@@ -1,6 +1,6 @@
 Name:Marx Diamond
 ManaCost:0
-Types:Artifact
+Types:Legendary Artifact
 T:Mode$ Phase | Phase$ Upkeep | ValidPlayer$ Player | TriggerZones$ Battlefield | Execute$ TrigControl | TriggerDescription$ At the beginning of each player's upkeep, that player untaps CARDNAME and gains control of CARDNAME. Untap it.
 SVar:TrigControl:DB$ GainControl | Defined$ Self | NewController$ TriggeredPlayer | SubAbility$ DBUntap | SpellDescription$ Gain control of CARDNAME. 
 SVar:DBUntap:DB$ Untap | Defined$ Self | SpellDescription$ Untap It.

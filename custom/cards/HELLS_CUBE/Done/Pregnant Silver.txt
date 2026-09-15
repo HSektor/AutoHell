@@ -1,0 +1,10 @@
+Name:Pregnant Silver
+ManaCost:2 W G
+Types:Creature Silver
+PT:2/3
+A:AB$ NameCard | Cost$ 3 T | AtRandom$ True | ValidCards$ Creature.Sliver | SubAbility$ Conjure | SpellDescription$ Create a token copy of a random Sliver creature.
+SVar:Conjure:DB$ MakeCard | Name$ ChosenName | Conjure$ True | Zone$ Battlefield | SubAbility$ DBClearNamed | TokenCard$ True
+SVar:DBClearNamed:DB$ Cleanup | ClearNamedCard$ True
+SVar:PlayMain1:TRUE
+DeckHas:Ability$Token
+Oracle:{3}, {T}: Create a token copy of a random Sliver creature.

@@ -1,0 +1,8 @@
+Name: Dead Simian 
+ManaCost: 1 BR BR
+Types: Creature Zombie Monkey
+K:Haste
+K:Deathtouch
+A:AB$ PutCounter | PrecostDesc$ Keyword Scavenge — | Cost$ 1 B R ExileFromGrave<1/CARDNAME> | ActivationZone$ Graveyard | ValidTgts$ Creature | CounterTypes$ Haste,Deathtouch | CounterNum$ 1 | SorcerySpeed$ True | SpellDescription$ For each keyword on this, put a keyword counter of that type on target creature. Keyword scavenge only as a sorcery.
+DeckHas:Ability$Counters|Graveyard
+Oracle: Keyword scavenge {1}{B}{R} ({1}{B}{R}, Exile this card from your graveyard: For each keyword on this, put a keyword counter of that type on target creature. Keyword scavenge only as a sorcery.)

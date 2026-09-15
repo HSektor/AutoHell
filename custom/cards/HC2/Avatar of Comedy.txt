@@ -1,0 +1,12 @@
+Name:Avatar of Comedy
+ManaCost:G
+Colors:green
+Types:Creature Fungus Dinossaur Avatar
+PT:1/1
+K:Level up:1T:Mode$ Phase | Phase$ Upkeep | ValidPlayer$ You | TriggerZones$ Battlefield | Execute$ TrigPutCounter | TriggerDescription$ At the beginning of your upkeep, put a spore counter on CARDNAME.
+SVar:TrigPutCounter:DB$ PutCounter | CounterType$ SPORE
+A:AB$ Token | Cost$ SubCounter<3/SPORE> | TokenScript$ g_1_1_saproling | SpellDescription$ Create a 1/1 green Saproling creature token.
+S:Mode$ Continuous | Affected$ Card.Self | SetPower$ 6 | SetToughness$ 6 | AddKeyword$ Trample | IsPresent$ Card.Self+counters_GE5_LEVEL | Description$ LEVEL 2+ 6/6 Trample
+DeckHints:Type$Fungus
+DeckHas:Ability$Counters|Token & Type$Saproling
+Oracle:Level Up {1}\nLEVEL 0–4\n1/1\nAt the beginning of your upkeep, put a spore counter on Thallid.\nRemove three spore counters from Thallid: Create a 1/1 green Saproling creature token.\nLEVEL 5+\n6/6\nTrample\nAt the beginning of your upkeep, put a spore counter on Thallid.\nRemove three spore counters from Thallid: Create a 1/1 green Saproling creature token.

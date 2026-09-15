@@ -1,0 +1,11 @@
+Name:Shardless Double Agent
+ManaCost:1 G U
+Types:Creature Human Rogue
+PT:2/2
+
+T:Mode$ SpellCast | ValidCard$ Card.Self | ValidTgts$ Opponent | TgtPrompt$ Choose target opponent | Execute$ TrigCascade | TriggerDescription$ When you cast CARDNAME, target opponent exiles cards from the top of their library until they exile a nonland card with mana value 2 or less. You may cast that card without paying its mana cost. Put the other cards exiled this way on the bottom of that library in a random order.
+SVar:TrigCascade:DB$ DigUntil | ValidTgts$ Opponent | Valid$ Card.nonLand+cmcLE2 | ValidDescription$ a nonland card with mana value 2 or less | FoundDestination$ Exile | FoundLibraryPosition$ -1 | RevealedDestination$ Library | RevealedLibraryPosition$ -1 | RevealRandomOrder$ True | RememberFound$ True | SubAbility$ DBPlay
+SVar:DBPlay:DB$ Play | Defined$ Remembered | Controller$ You | Optional$ True | WithoutManaCost$ True | SubAbility$ DBCleanup
+SVar:DBCleanup:DB$ Cleanup | ClearRemembered$ True
+
+Oracle: Cascade, but from target opponent's library. (When you cast Shardless Double Agent, target opponent exiles cards from the top of their library until they exile a nonland card with mana value 2 or less. You may cast that card without paying its mana cost. Put the other cards exiled this way on the bottom of that library in a random order.)

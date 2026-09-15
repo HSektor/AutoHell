@@ -1,0 +1,9 @@
+Name:Uncle Is Van
+ManaCost:2
+Types:Artifact Vehicle
+PT:4/3
+K:Crew:3
+A:AB$ PutCounter | Cost$ 5 | Monstrosity$ 2
+S:Mode$ Continuous | Affected$ Card.Self+IsMonstrous | AddKeyword$ Vigilance & Trample & Menace | Description$ As long as CARDNAME is monstrous, it has vigilance, trample, and menace
+S:Mode$ CantBlockBy | ValidCard$ Card.Self+IsMonstrous | ValidAttacker$ Creature.Self | ValidBlocker$ Creature.powerLE2 | Description$ As long as Truck is monstrous, CARDNAME can't be blocked by creatures with power 2 or less.
+Oracle:{5}: Monstrosity 2.\nAs long as Truck is monstrous, it has vigilance, trample, and menace and can’t be blocked by creatures with power 2 or less.\nCrew 3

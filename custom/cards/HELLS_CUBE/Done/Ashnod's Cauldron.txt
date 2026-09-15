@@ -1,0 +1,10 @@
+Name:Ashnod's Cauldron
+ManaCost:3
+Types:Artifact
+A:AB$ Charm | Cost$ Sac<1/Creature> | Choices$ DBLife,DBMana
+Svar:DBLife:DB$ GainLife | LifeAmount$ 2 | SpellDescription$ You gain 2 life.
+Svar:DBMana:DB$ Mana | Produced$ C | Amount$ 1 | SpellDescription$ Add {C}.
+SVar:NonStackingEffect:True
+DeckHas:Ability$Sacrifice
+DeckHints:Ability$Token
+Oracle:Sacrifice a creature: Add phyrexian {C}. (To add {H/C}, you may gain 2 life. If you don’t, add {C}.)

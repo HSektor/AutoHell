@@ -1,0 +1,9 @@
+Name:Opting to murder you
+ManaCost:2 U B
+Types:Instant
+A:SP$ Scry | ScryNum$ 1 | SubAbility$ ChoosePath | SpellDescription$ Scry 1. Then you may draw two cards. If you don’t, destroy target creature.
+SVar:ChoosePath:DB$ GenericChoice | Choices$ DrawCards,Destroy | Defined$ You
+SVar:DrawCards:DB$ Draw | NumCards$ 2 | SpellDescription$ Draw two cards.
+SVar:Destroy:DB$ Destroy | ValidTgts$ Creature | TgtPrompt$ Select target creature | SpellDescription$ Destroy target creature.
+Oracle:Scry 1. Then you may draw two cards. If you don’t, destroy target creature.
+

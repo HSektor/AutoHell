@@ -1,0 +1,16 @@
+Name:Sir Bearington
+ManaCost:1 G
+Types:Legendary Creature Bear
+PT:2/2
+A:AB$ Animate | Cost$ G | Types$ Knight | Colors$ White | RemoveCreatureTypes$ True | OverwriteColors$ True | Keywords$ Vigilance | SpellDescription$ Sir Bearington becomes a white Human Knight and gains vigilance until end of turn.
+AlternateMode:Adventure
+Oracle:{G}: Sir Bearington becomes a white Human Knight and gains vigilance until end of turn.
+
+ALTERNATE
+
+Name:Bear arms
+ManaCost:1 g
+Types:Instant Adventure
+A:SP$ PutCounter | ValidTgts$ Creature | TgtPrompt$ Select target creature you control | CounterType$ P1P1 | CounterNum$ X |SpellDescription$ Put a +1/+1 counter on target creature. If that creature is a Bear, put two +1/+1 counters on it instead.
+SVar:X:Targeted$Valid Creature.Bear/Plus.1
+Oracle:Put a +1/+1 counter on target creature. If that creature is a Bear, put two +1/+1 counters on it instead.

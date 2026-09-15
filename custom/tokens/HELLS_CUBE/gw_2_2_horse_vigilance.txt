@@ -1,0 +1,6 @@
+Name:Horse Token
+ManaCost:no cost
+Colors:green, white
+Types:Creature Soldier
+PT:2/2
+K:Vigilance

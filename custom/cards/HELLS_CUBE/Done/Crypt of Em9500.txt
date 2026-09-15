@@ -1,0 +1,8 @@
+Name:Crypt of Em9500
+ManaCost:no cost
+Types:Land
+K:Cycling:3
+R:Event$ Moved | ValidCard$ Card.Self | Destination$ Battlefield | ReplacementResult$ Updated | ReplaceWith$ ETBTapped | Description$ CARDNAME enters tapped.
+SVar:ETBTapped:DB$ Tap | Defined$ Self | ETB$ True
+A:AB$ Mana | Cost$ T | Produced$ Combo U B R | SpellDescription$ Add {U}, {B}, or {R}.
+Oracle:Crypt of Em9500 enters tapped.\n{T}: Add {U}, {B}, or {R}.\nCycling {3} ({3}, Discard this card: Draw a card.)

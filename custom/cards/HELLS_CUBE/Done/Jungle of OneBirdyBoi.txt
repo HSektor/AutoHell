@@ -1,0 +1,8 @@
+Name:Jungle of OneBirdyBoi
+ManaCost:no cost
+Types:Land
+K:Cycling:3
+R:Event$ Moved | ValidCard$ Card.Self | Destination$ Battlefield | ReplacementResult$ Updated | ReplaceWith$ ETBTapped | Description$ CARDNAME enters tapped.
+SVar:ETBTapped:DB$ Tap | Defined$ Self | ETB$ True
+A:AB$ Mana | Cost$ T | Produced$ Combo G U R | SpellDescription$  Add {G}, {U}, or {R}
+Oracle:Jungle of OneBirdyBoi enters tapped.\n{T}: Add {G}, {U}, or {R}\nCycling {3} ({3}, Discard this card: Draw a card.)

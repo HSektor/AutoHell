@@ -1,0 +1,10 @@
+Name:Very Angry Punk
+ManaCost:2 R G
+Types:Creature Human Citizen
+PT:0/0
+K:Riot
+K:Riot
+K:Riot
+K:Riot
+DeckHas:Ability$Counters
+Oracle:Riot, Riot, Riot, Riot (This creature enters with your choice of a +1/+1 counter or haste.)

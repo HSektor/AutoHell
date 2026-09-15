@@ -1,0 +1,16 @@
+Name:Whip
+ManaCost:1 B B
+Types:Sorcery
+A:SP$ Destroy | ValidTgts$ Creature | TgtPrompt$ Select target creature
+AlternateMode:Split
+Oracle:Destroy target creature.
+
+ALTERNATE
+
+Name:Nae Nae
+ManaCost:3 G W
+Types:Sorcery
+K:Aftermath
+A:SP$ Token | TokenOwner$ You  | TokenScript$ gw_2_2_horse_vigilance
+| TokenAmount$ 3 | SpellDescription$ Create two 2/2 green and white Horse tokens with vigilance.
+Oracle:Aftermath (Cast this spell only from your graveyard. Then exile it.)\nCreate two 2/2 green and white Horse tokens with vigilance.

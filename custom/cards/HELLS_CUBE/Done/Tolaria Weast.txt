@@ -1,0 +1,6 @@
+Name:Tolaria Weast
+ManaCost:no cost
+Types:Land
+A:AB$ Mana | Cost$ 2 T | Produced$ U | Amount$ X | SpellDescription$ Add {U} for each Island you control.
+SVar:X:Count$Valid Island.YouCtrl
+Oracle:{2}, {T}: Add {U} for each Island you control.

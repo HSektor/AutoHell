@@ -1,0 +1,7 @@
+Name:Mouth Toast
+ManaCost:2
+Types:Artifact Equipment Food
+K:Equip:1
+S:Mode$ Continuous | Affected$ Creature.EquippedBy | AddKeyword$ Trample & Haste | Description$ Equipped creature has trample, and haste.
+A:AB$ GainLife | Cost$ 2 T Sac<1/CARDNAME> | LifeAmount$ 3 | SpellDescription$ You gain 3 life.
+Oracle:Equipped creature has trample and haste.\nEquip {1}\n{2}, {T}, Sacrifice Mouth Toast: You gain 3 life.

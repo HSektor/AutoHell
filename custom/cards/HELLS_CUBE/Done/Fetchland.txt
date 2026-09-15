@@ -1,0 +1,6 @@
+Name:Fetchland
+ManaCost:no cost
+Types:Land
+A:AB$ Mana | Cost$ T | Produced$ C | SpellDescription$ Add {C}.
+A:AB$ Token | Cost$ 4 | TokenScript$ w_1_1_dog | TokenAmount$ 1 | SpellDescription$ Create a 1/1 white Dog creature token.
+Oracle:{T}: Add {C}.\n{4}, {T}: Create a 1/1 white Dog creature token.
