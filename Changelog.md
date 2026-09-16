@@ -114,3 +114,51 @@
 2. C Squid
 3. R Card Draw Cruise
 4. C Lightning Bolt’s Downside
+
+# Cards added v0.2:
+
+## Number | Rarity (for Adventure and Draft) | Name
+### Hell's Cube
+104 C Amsterdam
+105 C Crypt of Em9500
+106 C Consulate Vault t4prus
+107 C Fetchland
+108 U Phyrexian Mana Confluence
+109 C The Council's Chambers
+110 C Trading Post for Stolen Goods
+111 U Tundra (Under renovation)
+112 C Beijing
+113 R Pyroduct
+114 U Tolaria Weast
+115 R Secret Hideout
+116 C cirion02’s Art Folder
+117 C Flying Men has a fucking gun holy shit
+118 C Last Minute Design
+119 C Throne of fredfloof
+120 U Bread Return
+121 C Jungle of OneBirdyBoi
+122 R Spatula
+123 M White Lotus
+124 C Sir Bearington
+125 S Prized Lotus Tea
+126 U Sneaky Lotus
+127 C Mouth Toast
+128 R Chromatic Mantern
+129 R Truck
+130 M Moxen Symbiote
+131 U Bargain Bin Lotus
+132 C Ashnod's Cauldron
+133 C Whip
+134 C Opting to Murder You
+135 R Dead Simian
+136 C Very Angry Punk
+137 U Shardless Double Agent
+138 U Simic Cygnet
+139 R Pregnant Silver
+140 S Carmender
+
+### Hell's Cube 2
+5. M Monkey
+6. C Hate Bear
+7. M Avatar of Comedy
+8. U Woodland Champion (HC)
