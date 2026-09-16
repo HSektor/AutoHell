@@ -10,8 +10,13 @@ Booster=10 Common, 3 Uncommon, 1 RareMythic, 1 BasicLand
 2 C Squid
 3 R Card Draw Cruise
 4 C Lightning Bolt’s Downside
+5 M Monkey
+6 C Hate Bear
+7 M Avatar of Comedy
+8 U Woodland Champion (HC)
 
 [tokens]
 1 c_a_treasure_sac
+2 g_1_1_saproling
 
 [CreatureTypes]

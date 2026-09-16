@@ -12,8 +12,6 @@ Booster=10 Common, 3 Uncommon, 1 RareMythic, 1 BasicLand
 4 U Curious Cob Session
 5 R Dockside Extortionist but it Actually has Extort
 6 U Doom Crow
-6 C Flying Men has a fucking gun holy shit
-6 C Last Minute Design
 7 C Gobiln Mispeler
 8 U George
 9 M Magus of the Mox Pearl
@@ -87,7 +85,7 @@ Booster=10 Common, 3 Uncommon, 1 RareMythic, 1 BasicLand
 77 U Watch Wolf
 78 C Wuhan
 79 R Dash
-80 R ExaltedOne's Eight Fucking Trees
+80 C ExaltedOne's Eight Fucking Trees
 81 C 4_4 of Hearts
 82 M Sun Whitan
 83 M Marx Diamond
@@ -111,6 +109,43 @@ Booster=10 Common, 3 Uncommon, 1 RareMythic, 1 BasicLand
 101 U Murder (not the M13 one)
 102 R Vhat, Sponsored Champion
 103 M Monastery Mentor (HC)
+104 C Amsterdam
+105 C Crypt of Em9500
+106 C Consulate Vault t4prus
+107 C Fetchland
+108 U Phyrexian Mana Confluence
+109 C The Council's Chambers
+110 C Trading Post for Stolen Goods
+111 U Tundra (Under renovation)
+112 C Beijing
+113 R Pyroduct
+114 U Tolaria Weast
+115 R Secret Hideout
+116 C cirion02’s Art Folder
+117 C Flying Men has a fucking gun holy shit
+118 C Last Minute Design
+119 C Throne of fredfloof
+120 U Bread Return
+121 C Jungle of OneBirdyBoi
+122 R Spatula
+123 M White Lotus
+124 C Sir Bearington
+125 S Prized Lotus Tea
+126 U Sneaky Lotus
+127 C Mouth Toast
+128 R Chromatic Mantern
+129 R Truck
+130 M Moxen Symbiote
+131 U Bargain Bin Lotus
+132 C Ashnod's Cauldron
+133 C Whip
+134 C Opting to Murder You
+135 R Dead Simian
+136 C Very Angry Punk
+137 U Shardless Double Agent
+138 U Simic Cygnet
+139 R Pregnant Silver
+140 S Carmender
 230 L Plains
 231 L Plains
 232 L Plains
@@ -138,5 +173,7 @@ Booster=10 Common, 3 Uncommon, 1 RareMythic, 1 BasicLand
 8 g_2_2_bear
 9 g_3_3_ape
 10 w_1_1_soldier
+11 w_1_1_dog
+12 gw_2_2_horse_vigilance
 
 [CreatureTypes]
